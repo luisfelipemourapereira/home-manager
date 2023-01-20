@@ -44,6 +44,7 @@ let
     ./misc/xdg-user-dirs.nix
     ./misc/xdg.nix
     ./misc/xfconf.nix
+    ./raimix/programs/neovim.nix
     ./programs/abook.nix
     ./programs/aerc.nix
     ./programs/afew.nix
