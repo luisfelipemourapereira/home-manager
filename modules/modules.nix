@@ -15,305 +15,305 @@ with lib;
 let
 
   modules = [
-    # ./accounts/email.nix
-    # ./config/home-cursor.nix
-    # ./config/i18n.nix
-    # ./files.nix
-    # ./home-environment.nix
-    # ./i18n/input-method/default.nix
-    # ./launchd/default.nix
-    # ./manual.nix
-    # ./misc/dconf.nix
-    # ./misc/debug.nix
-    # ./misc/editorconfig.nix
-    # ./misc/fontconfig.nix
-    # ./misc/gtk.nix
-    # ./misc/lib.nix
-    # ./misc/news.nix
-    # ./misc/numlock.nix
-    # ./misc/pam.nix
-    # ./misc/qt.nix
-    # ./misc/specialization.nix
-    # ./misc/submodule-support.nix
-    # ./misc/tmpfiles.nix
-    # ./misc/version.nix
-    # ./misc/vte.nix
-    # ./misc/xdg-desktop-entries.nix
-    # ./misc/xdg-mime-apps.nix
-    # ./misc/xdg-mime.nix
-    # ./misc/xdg-system-dirs.nix
-    # ./misc/xdg-user-dirs.nix
-    # ./misc/xdg.nix
-    # ./misc/xfconf.nix
-    # ./raimix/programs/neovim.nix
-    # ./programs/abook.nix
-    # ./programs/aerc.nix
-    # ./programs/afew.nix
-    # ./programs/alacritty.nix
-    # ./programs/alot.nix
-    # ./programs/aria2.nix
-    # ./programs/astroid.nix
-    # ./programs/atuin.nix
-    # ./programs/autojump.nix
-    # ./programs/autorandr.nix
-    # ./programs/bash.nix
-    # ./programs/bashmount.nix
-    # ./programs/bat.nix
-    # ./programs/beets.nix
-    # ./programs/borgmatic.nix
-    # ./programs/bottom.nix
-    # ./programs/broot.nix
-    # ./programs/browserpass.nix
-    # ./programs/btop.nix
-    # ./programs/chromium.nix
-    # ./programs/command-not-found/command-not-found.nix
-    # ./programs/dircolors.nix
-    # ./programs/direnv.nix
-    # ./programs/discocss.nix
-    # ./programs/eclipse.nix
-    # ./programs/emacs.nix
-    # ./programs/eww.nix
-    # ./programs/exa.nix
-    # ./programs/feh.nix
-    # ./programs/firefox.nix
-    # ./programs/fish.nix
-    # ./programs/foot.nix
-    # ./programs/fzf.nix
-    # ./programs/gallery-dl.nix
-    # ./programs/getmail.nix
-    # ./programs/gh.nix
-    # ./programs/git.nix
-    # ./programs/gitui.nix
-    # ./programs/gnome-terminal.nix
-    # ./programs/go.nix
-    # ./programs/gpg.nix
-    # ./programs/havoc.nix
-    # ./programs/helix.nix
-    # ./programs/hexchat.nix
-    # ./programs/himalaya.nix
-    # ./programs/home-manager.nix
-    # ./programs/htop.nix
-    # ./programs/hyfetch.nix
-    # ./programs/i3status-rust.nix
-    # ./programs/i3status.nix
-    # ./programs/info.nix
-    # ./programs/ion.nix
-    # ./programs/irssi.nix
-    # ./programs/java.nix
-    # ./programs/jq.nix
-    # ./programs/just.nix
-    # ./programs/k9s.nix
-    # ./programs/kakoune.nix
-    # ./programs/keychain.nix
-    # ./programs/kitty.nix
-    # ./programs/kodi.nix
-    # ./programs/lazygit.nix
-    # ./programs/ledger.nix
-    # ./programs/less.nix
-    # ./programs/lesspipe.nix
-    # ./programs/lf.nix
-    # ./programs/librewolf.nix
-    # ./programs/lieer.nix
-    # ./programs/looking-glass-client.nix
-    # ./programs/lsd.nix
-    # ./programs/man.nix
-    # ./programs/mangohud.nix
-    # ./programs/matplotlib.nix
-    # ./programs/mbsync.nix
-    # ./programs/mcfly.nix
-    # ./programs/mercurial.nix
-    # ./programs/micro.nix
-    # ./programs/mpv.nix
-    # ./programs/msmtp.nix
-    # ./programs/mu.nix
-    # ./programs/mujmap.nix
-    # ./programs/navi.nix
-    # ./programs/ncmpcpp.nix
-    # ./programs/ncspot.nix
-    # ./programs/ne.nix
-    # ./programs/neomutt.nix
-    # ./programs/neovim.nix
-    # ./programs/newsboat.nix
-    # ./programs/nheko.nix
-    # ./programs/nix-index.nix
-    # ./programs/nnn.nix
-    # ./programs/noti.nix
-    # ./programs/notmuch.nix
-    # ./programs/nushell.nix
-    # ./programs/obs-studio.nix
-    # ./programs/octant.nix
-    # ./programs/offlineimap.nix
-    # ./programs/oh-my-posh.nix
-    # ./programs/opam.nix
-    # ./programs/pandoc.nix
-    # ./programs/password-store.nix
-    # ./programs/pazi.nix
-    # ./programs/pet.nix
-    # ./programs/pidgin.nix
-    # ./programs/pistol.nix
-    # ./programs/piston-cli.nix
-    # ./programs/pls.nix
-    # ./programs/powerline-go.nix
-    # ./programs/pubs.nix
-    # ./programs/pylint.nix
-    # ./programs/qutebrowser.nix
-    # ./programs/rbw.nix
-    # ./programs/readline.nix
-    # ./programs/rofi-pass.nix
-    # ./programs/rofi.nix
-    # ./programs/rtorrent.nix
-    # ./programs/sagemath.nix
-    # ./programs/sbt.nix
-    # ./programs/scmpuff.nix
-    # ./programs/senpai.nix
-    # ./programs/sioyek.nix
-    # ./programs/skim.nix
-    # ./programs/sm64ex.nix
-    # ./programs/sqls.nix
-    # ./programs/ssh.nix
-    # ./programs/starship.nix
-    # ./programs/swaylock.nix
-    # ./programs/taskwarrior.nix
-    # ./programs/tealdeer.nix
-    # ./programs/terminator.nix
-    # ./programs/termite.nix
-    # ./programs/texlive.nix
-    # ./programs/thunderbird.nix
-    # ./programs/timidity.nix
-    # ./programs/tint2.nix
-    # ./programs/tiny.nix
-    # ./programs/tmate.nix
-    # ./programs/tmux.nix
-    # ./programs/topgrade.nix
-    # ./programs/urxvt.nix
-    # ./programs/vim.nix
-    # ./programs/vscode.nix
-    # ./programs/vscode/haskell.nix
-    # ./programs/pywal.nix
-    # ./programs/watson.nix
-    # ./programs/waybar.nix
-    # ./programs/wezterm.nix
-    # ./programs/xmobar.nix
-    # ./programs/yt-dlp.nix
-    # ./programs/z-lua.nix
-    # ./programs/zathura.nix
-    # ./programs/zellij.nix
-    # ./programs/zoxide.nix
-    # ./programs/zplug.nix
-    # ./programs/zsh.nix
-    # ./programs/zsh/prezto.nix
-    # ./services/barrier.nix
-    # ./services/betterlockscreen.nix
-    # ./services/blueman-applet.nix
-    # ./services/borgmatic.nix
-    # ./services/cachix-agent.nix
-    # ./services/caffeine.nix
-    # ./services/cbatticon.nix
-    # ./services/clipman.nix
-    # ./services/clipmenu.nix
-    # ./services/devilspie2.nix
-    # ./services/dropbox.nix
-    # ./services/dunst.nix
-    # ./services/dwm-status.nix
-    # ./services/easyeffects.nix
-    # ./services/emacs.nix
-    # ./services/etesync-dav.nix
-    # ./services/espanso.nix
-    # ./services/flameshot.nix
-    # ./services/fluidsynth.nix
-    # ./services/fnott.nix
-    # ./services/fusuma.nix
-    # ./services/getmail.nix
-    # ./services/git-sync.nix
-    # ./services/gnome-keyring.nix
-    # ./services/gpg-agent.nix
-    # ./services/grobi.nix
-    # ./services/gromit-mpx.nix
-    # ./services/home-manager-auto-upgrade.nix
-    # ./services/hound.nix
-    # ./services/imapnotify.nix
-    # ./services/kanshi.nix
-    # ./services/kbfs.nix
-    # ./services/kdeconnect.nix
-    # ./services/keepassx.nix
-    # ./services/keybase.nix
-    # ./services/keynav.nix
-    # ./services/lieer.nix
-    # ./services/lorri.nix
-    # ./services/mako.nix
-    # ./services/mbsync.nix
-    # ./services/megasync.nix
-    # ./services/mopidy.nix
-    # ./services/mpd.nix
-    # ./services/mpdris2.nix
-    # ./services/mpd-discord-rpc.nix
-    # ./services/mpris-proxy.nix
-    # ./services/muchsync.nix
-    # ./services/network-manager-applet.nix
-    # ./services/nextcloud-client.nix
-    # ./services/notify-osd.nix
-    # ./services/opensnitch-ui.nix
-    # ./services/owncloud-client.nix
-    # ./services/pantalaimon.nix
-    # ./services/parcellite.nix
-    # ./services/pass-secret-service.nix
-    # ./services/password-store-sync.nix
-    # ./services/pasystray.nix
-    # ./services/pbgopy.nix
-    # ./services/picom.nix
-    # ./services/plan9port.nix
-    # ./services/playerctld.nix
-    # ./services/plex-mpv-shim.nix
-    # ./services/polybar.nix
-    # ./services/poweralertd.nix
-    # ./services/pueue.nix
-    # ./services/pulseeffects.nix
-    # ./services/random-background.nix
-    # ./services/recoll.nix
-    # ./services/redshift-gammastep/gammastep.nix
-    # ./services/redshift-gammastep/redshift.nix
-    # ./services/rsibreak.nix
-    # ./services/safeeyes.nix
-    # ./services/screen-locker.nix
-    # ./services/sctd.nix
-    # ./services/spotifyd.nix
-    # ./services/stalonetray.nix
-    # ./services/status-notifier-watcher.nix
-    # ./services/swayidle.nix
-    # ./services/sxhkd.nix
-    # ./services/syncthing.nix
-    # ./services/systembus-notify.nix
-    # ./services/taffybar.nix
-    # ./services/tahoe-lafs.nix
-    # ./services/taskwarrior-sync.nix
-    # ./services/trayer.nix
-    # ./services/twmn.nix
-    # ./services/udiskie.nix
-    # ./services/unclutter.nix
-    # ./services/unison.nix
-    # ./services/volnoti.nix
-    # ./services/window-managers/awesome.nix
-    # ./services/window-managers/bspwm/default.nix
-    # ./services/window-managers/fluxbox.nix
-    # ./services/window-managers/herbstluftwm.nix
-    # ./services/window-managers/i3-sway/i3.nix
-    # ./services/window-managers/i3-sway/sway.nix
-    # ./services/window-managers/i3-sway/swaynag.nix
-    # ./services/window-managers/spectrwm.nix
-    # ./services/window-managers/xmonad.nix
-    # ./services/wlsunset.nix
-    # ./services/xcape.nix
-    # ./services/xembed-sni-proxy.nix
-    # ./services/xidlehook.nix
-    # ./services/xscreensaver.nix
-    # ./services/xsettingsd.nix
-    # ./services/xsuspender.nix
-    # ./systemd.nix
-    # ./targets/darwin
-    # ./targets/generic-linux.nix
-    # ./xresources.nix
-    # ./xsession.nix
-    # ./misc/nix.nix
+    ./accounts/email.nix
+    ./config/home-cursor.nix
+    ./config/i18n.nix
+    ./files.nix
+    ./home-environment.nix
+    ./i18n/input-method/default.nix
+    ./launchd/default.nix
+    ./manual.nix
+    ./misc/dconf.nix
+    ./misc/debug.nix
+    ./misc/editorconfig.nix
+    ./misc/fontconfig.nix
+    ./misc/gtk.nix
+    ./misc/lib.nix
+    ./misc/news.nix
+    ./misc/numlock.nix
+    ./misc/pam.nix
+    ./misc/qt.nix
+    ./misc/specialization.nix
+    ./misc/submodule-support.nix
+    ./misc/tmpfiles.nix
+    ./misc/version.nix
+    ./misc/vte.nix
+    ./misc/xdg-desktop-entries.nix
+    ./misc/xdg-mime-apps.nix
+    ./misc/xdg-mime.nix
+    ./misc/xdg-system-dirs.nix
+    ./misc/xdg-user-dirs.nix
+    ./misc/xdg.nix
+    ./misc/xfconf.nix
+    ./raimix/programs/neovim.nix
+    ./programs/abook.nix
+    ./programs/aerc.nix
+    ./programs/afew.nix
+    ./programs/alacritty.nix
+    ./programs/alot.nix
+    ./programs/aria2.nix
+    ./programs/astroid.nix
+    ./programs/atuin.nix
+    ./programs/autojump.nix
+    ./programs/autorandr.nix
+    ./programs/bash.nix
+    ./programs/bashmount.nix
+    ./programs/bat.nix
+    ./programs/beets.nix
+    ./programs/borgmatic.nix
+    ./programs/bottom.nix
+    ./programs/broot.nix
+    ./programs/browserpass.nix
+    ./programs/btop.nix
+    ./programs/chromium.nix
+    ./programs/command-not-found/command-not-found.nix
+    ./programs/dircolors.nix
+    ./programs/direnv.nix
+    ./programs/discocss.nix
+    ./programs/eclipse.nix
+    ./programs/emacs.nix
+    ./programs/eww.nix
+    ./programs/exa.nix
+    ./programs/feh.nix
+    ./programs/firefox.nix
+    ./programs/fish.nix
+    ./programs/foot.nix
+    ./programs/fzf.nix
+    ./programs/gallery-dl.nix
+    ./programs/getmail.nix
+    ./programs/gh.nix
+    ./programs/git.nix
+    ./programs/gitui.nix
+    ./programs/gnome-terminal.nix
+    ./programs/go.nix
+    ./programs/gpg.nix
+    ./programs/havoc.nix
+    ./programs/helix.nix
+    ./programs/hexchat.nix
+    ./programs/himalaya.nix
+    ./programs/home-manager.nix
+    ./programs/htop.nix
+    ./programs/hyfetch.nix
+    ./programs/i3status-rust.nix
+    ./programs/i3status.nix
+    ./programs/info.nix
+    ./programs/ion.nix
+    ./programs/irssi.nix
+    ./programs/java.nix
+    ./programs/jq.nix
+    ./programs/just.nix
+    ./programs/k9s.nix
+    ./programs/kakoune.nix
+    ./programs/keychain.nix
+    ./programs/kitty.nix
+    ./programs/kodi.nix
+    ./programs/lazygit.nix
+    ./programs/ledger.nix
+    ./programs/less.nix
+    ./programs/lesspipe.nix
+    ./programs/lf.nix
+    ./programs/librewolf.nix
+    ./programs/lieer.nix
+    ./programs/looking-glass-client.nix
+    ./programs/lsd.nix
+    ./programs/man.nix
+    ./programs/mangohud.nix
+    ./programs/matplotlib.nix
+    ./programs/mbsync.nix
+    ./programs/mcfly.nix
+    ./programs/mercurial.nix
+    ./programs/micro.nix
+    ./programs/mpv.nix
+    ./programs/msmtp.nix
+    ./programs/mu.nix
+    ./programs/mujmap.nix
+    ./programs/navi.nix
+    ./programs/ncmpcpp.nix
+    ./programs/ncspot.nix
+    ./programs/ne.nix
+    ./programs/neomutt.nix
+    ./programs/neovim.nix
+    ./programs/newsboat.nix
+    ./programs/nheko.nix
+    ./programs/nix-index.nix
+    ./programs/nnn.nix
+    ./programs/noti.nix
+    ./programs/notmuch.nix
+    ./programs/nushell.nix
+    ./programs/obs-studio.nix
+    ./programs/octant.nix
+    ./programs/offlineimap.nix
+    ./programs/oh-my-posh.nix
+    ./programs/opam.nix
+    ./programs/pandoc.nix
+    ./programs/password-store.nix
+    ./programs/pazi.nix
+    ./programs/pet.nix
+    ./programs/pidgin.nix
+    ./programs/pistol.nix
+    ./programs/piston-cli.nix
+    ./programs/pls.nix
+    ./programs/powerline-go.nix
+    ./programs/pubs.nix
+    ./programs/pylint.nix
+    ./programs/qutebrowser.nix
+    ./programs/rbw.nix
+    ./programs/readline.nix
+    ./programs/rofi-pass.nix
+    ./programs/rofi.nix
+    ./programs/rtorrent.nix
+    ./programs/sagemath.nix
+    ./programs/sbt.nix
+    ./programs/scmpuff.nix
+    ./programs/senpai.nix
+    ./programs/sioyek.nix
+    ./programs/skim.nix
+    ./programs/sm64ex.nix
+    ./programs/sqls.nix
+    ./programs/ssh.nix
+    ./programs/starship.nix
+    ./programs/swaylock.nix
+    ./programs/taskwarrior.nix
+    ./programs/tealdeer.nix
+    ./programs/terminator.nix
+    ./programs/termite.nix
+    ./programs/texlive.nix
+    ./programs/thunderbird.nix
+    ./programs/timidity.nix
+    ./programs/tint2.nix
+    ./programs/tiny.nix
+    ./programs/tmate.nix
+    ./programs/tmux.nix
+    ./programs/topgrade.nix
+    ./programs/urxvt.nix
+    ./programs/vim.nix
+    ./programs/vscode.nix
+    ./programs/vscode/haskell.nix
+    ./programs/pywal.nix
+    ./programs/watson.nix
+    ./programs/waybar.nix
+    ./programs/wezterm.nix
+    ./programs/xmobar.nix
+    ./programs/yt-dlp.nix
+    ./programs/z-lua.nix
+    ./programs/zathura.nix
+    ./programs/zellij.nix
+    ./programs/zoxide.nix
+    ./programs/zplug.nix
+    ./programs/zsh.nix
+    ./programs/zsh/prezto.nix
+    ./services/barrier.nix
+    ./services/betterlockscreen.nix
+    ./services/blueman-applet.nix
+    ./services/borgmatic.nix
+    ./services/cachix-agent.nix
+    ./services/caffeine.nix
+    ./services/cbatticon.nix
+    ./services/clipman.nix
+    ./services/clipmenu.nix
+    ./services/devilspie2.nix
+    ./services/dropbox.nix
+    ./services/dunst.nix
+    ./services/dwm-status.nix
+    ./services/easyeffects.nix
+    ./services/emacs.nix
+    ./services/etesync-dav.nix
+    ./services/espanso.nix
+    ./services/flameshot.nix
+    ./services/fluidsynth.nix
+    ./services/fnott.nix
+    ./services/fusuma.nix
+    ./services/getmail.nix
+    ./services/git-sync.nix
+    ./services/gnome-keyring.nix
+    ./services/gpg-agent.nix
+    ./services/grobi.nix
+    ./services/gromit-mpx.nix
+    ./services/home-manager-auto-upgrade.nix
+    ./services/hound.nix
+    ./services/imapnotify.nix
+    ./services/kanshi.nix
+    ./services/kbfs.nix
+    ./services/kdeconnect.nix
+    ./services/keepassx.nix
+    ./services/keybase.nix
+    ./services/keynav.nix
+    ./services/lieer.nix
+    ./services/lorri.nix
+    ./services/mako.nix
+    ./services/mbsync.nix
+    ./services/megasync.nix
+    ./services/mopidy.nix
+    ./services/mpd.nix
+    ./services/mpdris2.nix
+    ./services/mpd-discord-rpc.nix
+    ./services/mpris-proxy.nix
+    ./services/muchsync.nix
+    ./services/network-manager-applet.nix
+    ./services/nextcloud-client.nix
+    ./services/notify-osd.nix
+    ./services/opensnitch-ui.nix
+    ./services/owncloud-client.nix
+    ./services/pantalaimon.nix
+    ./services/parcellite.nix
+    ./services/pass-secret-service.nix
+    ./services/password-store-sync.nix
+    ./services/pasystray.nix
+    ./services/pbgopy.nix
+    ./services/picom.nix
+    ./services/plan9port.nix
+    ./services/playerctld.nix
+    ./services/plex-mpv-shim.nix
+    ./services/polybar.nix
+    ./services/poweralertd.nix
+    ./services/pueue.nix
+    ./services/pulseeffects.nix
+    ./services/random-background.nix
+    ./services/recoll.nix
+    ./services/redshift-gammastep/gammastep.nix
+    ./services/redshift-gammastep/redshift.nix
+    ./services/rsibreak.nix
+    ./services/safeeyes.nix
+    ./services/screen-locker.nix
+    ./services/sctd.nix
+    ./services/spotifyd.nix
+    ./services/stalonetray.nix
+    ./services/status-notifier-watcher.nix
+    ./services/swayidle.nix
+    ./services/sxhkd.nix
+    ./services/syncthing.nix
+    ./services/systembus-notify.nix
+    ./services/taffybar.nix
+    ./services/tahoe-lafs.nix
+    ./services/taskwarrior-sync.nix
+    ./services/trayer.nix
+    ./services/twmn.nix
+    ./services/udiskie.nix
+    ./services/unclutter.nix
+    ./services/unison.nix
+    ./services/volnoti.nix
+    ./services/window-managers/awesome.nix
+    ./services/window-managers/bspwm/default.nix
+    ./services/window-managers/fluxbox.nix
+    ./services/window-managers/herbstluftwm.nix
+    ./services/window-managers/i3-sway/i3.nix
+    ./services/window-managers/i3-sway/sway.nix
+    ./services/window-managers/i3-sway/swaynag.nix
+    ./services/window-managers/spectrwm.nix
+    ./services/window-managers/xmonad.nix
+    ./services/wlsunset.nix
+    ./services/xcape.nix
+    ./services/xembed-sni-proxy.nix
+    ./services/xidlehook.nix
+    ./services/xscreensaver.nix
+    ./services/xsettingsd.nix
+    ./services/xsuspender.nix
+    ./systemd.nix
+    ./targets/darwin
+    ./targets/generic-linux.nix
+    ./xresources.nix
+    ./xsession.nix
+    ./misc/nix.nix
     (pkgs.path + "/nixos/modules/misc/assertions.nix")
     (pkgs.path + "/nixos/modules/misc/meta.nix")
   ] ++ optional useNixpkgsModule ./misc/nixpkgs.nix
