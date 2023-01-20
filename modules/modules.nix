@@ -1,13 +1,14 @@
 { pkgs
 
-# Note, this should be "the standard library" + HM extensions.
+  # Note, this should be "the standard library" + HM extensions.
 , lib
 
-# Whether to enable module type checking.
+  # Whether to enable module type checking.
 , check ? true
 
   # If disabled, the pkgs attribute passed to this function is used instead.
-, useNixpkgsModule ? true }:
+, useNixpkgsModule ? true
+}:
 
 with lib;
 
@@ -44,6 +45,7 @@ let
     ./misc/xdg-user-dirs.nix
     ./misc/xdg.nix
     ./misc/xfconf.nix
+    ./raimix/programs/neovim.nix
     ./programs/abook.nix
     ./programs/aerc.nix
     ./programs/afew.nix
@@ -315,7 +317,7 @@ let
     (pkgs.path + "/nixos/modules/misc/assertions.nix")
     (pkgs.path + "/nixos/modules/misc/meta.nix")
   ] ++ optional useNixpkgsModule ./misc/nixpkgs.nix
-    ++ optional (!useNixpkgsModule) ./misc/nixpkgs-disabled.nix;
+  ++ optional (!useNixpkgsModule) ./misc/nixpkgs-disabled.nix;
 
   pkgsModule = { config, ... }: {
     config = {
@@ -333,4 +335,5 @@ let
     };
   };
 
-in modules ++ [ pkgsModule ]
+in
+modules ++ [ pkgsModule ]

@@ -22,7 +22,7 @@ in
 
   config = mkMerge [
     (mkIf cfg.enable {
-      # config.home.packages = [ cfg.package ];
+      home.packages = [ cfg.package ];
     })
   ];
 }
